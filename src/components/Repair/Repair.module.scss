@@ -1,0 +1,93 @@
+@import 'src/assets/styles/variables.scss';
+
+.repair {
+    max-width: 1350px;
+    margin: 150px auto 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px 0 20px;
+
+    .title {
+        color: $white;
+        font-size: 26px;
+        font-weight: 600;
+        margin: 0 0 75px 0;
+    }
+
+    .titleMax {
+        color: $white;
+        font-size: 26px;
+        font-weight: 600;
+        margin: 0 0 25px 0;
+    }
+
+    .span {
+        color: $main;
+    }
+
+    .container {
+        max-width: 1100px;
+    }
+
+    .text {
+        color: $gray1;
+        font-size: 20px;
+        font-weight: 500;
+        max-width: 1100px;
+        margin: 0 0 75px 0;
+
+        @media screen and (max-width: 560px) {
+            font-size: 18px;
+        }
+    }
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (max-width: 560px) {
+            flex-direction: column;
+        }
+    }
+
+    .subtitle {
+        color: $gray1;
+        font-size: 22px;
+        font-weight: 600;
+
+        @media screen and (max-width: 560px) {
+            font-size: 20px;
+        }
+    }
+
+    .subtitleMax {
+        color: $main;
+        font-size: 22px;
+        font-weight: 600;
+        text-align: center;
+        margin: 0 0 50px 0;
+
+        @media screen and (max-width: 560px) {
+            font-size: 20px;
+            text-align: start;
+            margin: 20px 0 50px 0;
+        }
+    }
+
+    .images {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+
+        @media screen and (max-width: 700px) {
+            flex-direction: column;
+        }
+    }
+
+    .image {
+        border-radius: 16px;
+        border: 2px solid $main;
+    }
+}
